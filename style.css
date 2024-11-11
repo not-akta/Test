@@ -1,13 +1,13 @@
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
    
 body{
     margin: 0;
     background-color: white;
 }
-.main{
+.front{
     max-width: 100%;
     height: 100%;
-    background: url("/images/background.png") center;
+    background: url("images/background.png") center;
     background-size: cover;
 }
 .menu{
@@ -43,25 +43,25 @@ body{
     text-decoration: none;
     color: rgb(0, 0, 0);    
 }
-.maintext{
+.front_text{
     padding-left: 70px;
     width: 720px;
     height: 20px;
 }
-.maintext h1{
+.front_text h1{
     font-family: 'Roboto', sans-serif;
     font-size: 170px;
     color: white;
     margin-bottom: 20px;
     font-weight: 900;
 }
-.maintext p{
+.front_text p{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 32px;
     color: white;
 }
-.but{
+.front_btn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,16 +77,16 @@ body{
     transition: background-color 0.3s, transform 0.2s; 
     
 }
-.but p a{
+.front_btn p a{
     text-decoration: none;
     color: black;
 }
-.but:hover {
+.front_btn:hover {
     background-color: #4bb7b7; 
     transform: translateY(-2px); 
 }
 
-.but:active {
+.front_btn:active {
     transform: translateY(1px); 
 }
 
@@ -117,7 +117,7 @@ body{
     margin-top: 20px;
 }
 
-.cardsblock{
+.cards_block{
     font-family: 'Roboto', sans-serif;
     background-color: #4bb7b7; 
     display: flex;
@@ -126,7 +126,7 @@ body{
     padding: 20px;
     padding-top: 10px;
 }
-.cardsheader{
+.cards_header{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,7 +169,7 @@ body{
     margin: 10px 0;
 }
 
-.buy-button {
+.buy_btn {
     background-color: #ffbf69; 
     color: black;
     padding: 10px 15px; 
@@ -180,16 +180,16 @@ body{
     width: 140px;
     align-items: center;
 }
-.buy-button a{
+.buy_btn a{
     text-decoration: none;
     color: black; 
 }
 
-.buy-button:hover {
+.buy_btn:hover {
     background-color: #eaae61;
 }
 
-.last{
+.rules{
     background-image: url('images/bg-grid.png');
     background-size:cover;
     max-width: 100%;
@@ -259,15 +259,15 @@ body{
 
 }
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1024px){
     body{
         margin: 0;
         background-color: white;
     }
-    .main{
+    .front{
         max-width: 100%;
-        height: 80%;
-        background: url("/images/background.png");
+        height: 85%;
+        background: url("images/background.png");
     }
     .menu{
         display: flex;
@@ -294,17 +294,17 @@ body{
         text-decoration: none;
         color: rgb(0, 0, 0);    
     }
-    .maintext{
+    .front_text{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         padding-top: 200px;
         width: 100%;
-        height: 20px;
+        height: 50px;
         text-align: center;
     }
-    .maintext h1{
+    .front_text h1{
         font-family: 'Roboto', sans-serif;
         align-items: center;
         font-size: 100px;
@@ -312,13 +312,13 @@ body{
         margin-bottom: 20px;
         font-weight: 900;
     }
-    .maintext p{
+    .front_text p{
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 20px;
         color: white;
     }
-    .but{
+    .front_btn{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -333,23 +333,23 @@ body{
         cursor: pointer; 
         transition: background-color 0.3s, transform 0.2s; 
     }
-    .but p a{
+    .front_btn p a{
         text-decoration: none;
         color: rgb(0, 0, 0)
     }
-    .but:hover {
+    .front_btn:hover {
         background-color: #4bb7b7; 
         transform: translateY(-2px); 
     }
     
-    .but:active {
+    .front_btn:active {
         transform: translateY(1px); 
     }
     
     .info
     {
+        margin-top: 50px;
         padding: 20px;
-        padding-top: 25px;
         max-width: 100%;
         height: 70%;
         display: flex;
@@ -375,7 +375,7 @@ body{
         margin-top: 5px;
     }
     
-    .cardsblock{
+    .cards_block{
         font-family: 'Roboto', sans-serif;
         background-color: #4bb7b7; 
         display: flex;
@@ -385,7 +385,7 @@ body{
         padding-top: 10px;
         text-align: center;
     }
-    .cardsheader{
+    .cards_header{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -422,14 +422,14 @@ body{
     .card img {    
         margin-left: auto;
         margin-right: auto;
-        max-width: 250%; 
+        max-width: 100%; 
     }
     .card h3 {
         align-items: center;
         margin: 20px 0; 
     }
     
-    .buy-button {
+    .buy_btn {
         background-color: #ffbf69;
         color: black; 
         padding: 10px 15px; 
@@ -440,15 +440,15 @@ body{
         width: 140px;
         align-items: center;
     }
-    .buy-button a{
+    .buy_btn a{
         text-decoration: none;
         color: rgb(0, 0, 0)
     }
-    .buy-button:hover {
+    .buy_btn:hover {
         background-color: #eaae61; 
     }
     
-    .last{
+    .rules{
         background-image: url('images/bg-grid.png');
         max-width: 100%;
         height: 70%;
@@ -511,4 +511,261 @@ body{
     }
     
     
+}
+
+@media screen and (max-width: 320px){
+    body{
+        margin: 0;
+        background-color: white;
+        overflow-x: hidden;
+        
+    }
+    .front{
+        max-width: 100%;
+        background: url("images/background.png");
+    }
+    .menu{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin: auto;
+    }
+    .logo{
+        display: none;
+    }
+    .menu ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu ul li{
+        list-style-type: none;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+    }
+    .menu ul li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);    
+    }
+    .front_text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 200px;
+        width: 50%;
+        height: 20px;
+        text-align: center;
+    }
+    .front_text h1{
+        font-family: 'Roboto', sans-serif;
+        align-items: center;
+        font-size: 45px;
+        color: white;
+        margin-bottom: 20px;
+        font-weight: 900;
+    }
+    .front_text p{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: white;
+    }
+    .front_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 230px;
+        height: 80px;
+        background-color: #57d6d6; 
+        color: black; 
+        padding: 15px 30px; 
+        border: none; 
+        border-radius: 5px; 
+        font-size: 16px; 
+        cursor: pointer; 
+        transition: background-color 0.3s, transform 0.2s; 
+    }
+    .front_btn p a{
+        text-decoration: none;
+        color: rgb(0, 0, 0)
+    }
+    .front_btn:hover {
+        background-color: #4bb7b7; 
+        transform: translateY(-2px); 
+    }
+    
+    .front_btn:active {
+        transform: translateY(1px); 
+    }
+    
+    .info
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+        margin-right: 0px;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .info h1{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        padding-top: 12px;
+    }
+    .info p{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgb(0, 0, 0);
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .cards_block{
+        font-family: 'Roboto', sans-serif;
+        background-color: #4bb7b7; 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .cards_header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 25px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        font-size: 30px;
+        margin-bottom: -100px;
+    }
+    .cards{
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 10px;
+        text-align: center;
+        
+    }
+    .card {
+        max-width: 100%;
+        margin-top: 25px;
+        margin: 50px;
+        height: 100px;
+        text-align: center; 
+        transition: transform 0.2s;
+    }
+    .card:hover {
+        transform: scale(1.05); 
+    }
+    
+    .card img {    
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px;
+        transform: scale(9);
+        overflow: hidden;
+
+    }
+    .card h3 {
+        align-items: center;
+        margin: 20px 0; 
+        font-size:12px ;
+    }
+    
+    .buy_btn {
+        background-color: #ffbf69;
+        color: black; 
+        padding: 10px 15px; 
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        transition: background-color 0.3s; 
+        width: 75px;
+        align-items: center;
+    }
+    .buy_btn a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size:12px ;
+    
+    }
+    .buy_btn:hover {
+        background-color: #eaae61; 
+    }
+    
+    .rules{
+        
+        max-width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+    .left h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        color: black;
+        margin: auto;
+        font-weight: 900;
+        
+    }
+    .left p{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color: black;
+    }
+    .right img{
+        display: none;
+    }
+    
+    .bottom{
+        max-width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        background-color: rgb(55, 55, 55); 
+        
+    }
+    .bottom ul{
+        display: flex;      
+        justify-content: space-around;
+    }
+    .bottom ul li{
+        list-style-type: none;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-weight: 600;
+        transition: background-color 1s;
+    }
+    .bottom ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 5px;
+    }
+    .bottom ul li:hover{
+        background-color: rgb(72, 72, 72); 
+        text-align: center;
+        height: auto;
+    }
 }
